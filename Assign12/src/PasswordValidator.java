@@ -10,10 +10,10 @@ public class PasswordValidator {
 
         int count = 0;
 
-        if (password.matches(".*[a-z].*")) count++; // Lowercase
-        if (password.matches(".*[A-Z].*")) count++; // Uppercase
-        if (password.matches(".*[0-9].*")) count++; // Numbers
-        if (password.matches(".*[~!@#$%^&*()\-=+_].*")) count++; // Special characters
+        if (password.matches(".*[a-z].*")) count++; 
+        if (password.matches(".*[A-Z].*")) count++; 
+        if (password.matches(".*[0-9].*")) count++; 
+        if (password.matches(".*[~!@#$%^&*()\-=+_].*")) count++; 
 
         return count >= 3;
     }
